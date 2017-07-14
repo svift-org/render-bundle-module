@@ -1,5 +1,5 @@
 {
-  "name": "render-bundle-module",
+  "name": "svift-render-bundle",
   "version": "1.0.0",
   "description": "Bundle all rendered content into a folder and zip file",
   "main": "index.js",
