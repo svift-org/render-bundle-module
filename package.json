@@ -15,7 +15,6 @@
   "homepage": "https://bitbucket.org/svift/render-bundle-module#readme",
   "dependencies": {
     "archiver": "^2.0.0",
-    "fs": "0.0.1-security",
-    "svift-utils": "git+ssh://git@bitbucket.org/svift/utils.git"
+    "fs": "0.0.1-security"
   }
 }

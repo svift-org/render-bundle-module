@@ -7,8 +7,7 @@
 'use strict';
 
 var fs = require('fs'),
-  ar = require('archiver'),
-  utils = require('svift-utils')
+  ar = require('archiver')
 
 var bundle = (function () {
  
@@ -23,7 +22,7 @@ var bundle = (function () {
   * @api public
   */
 
-  module.bundle = function (folder, del, callback) {
+  module.bundle = function (folder, ins, callback) {
     var split = folder.split('/'),
       name = split[split.length-1],
       path = folder.substr(0,folder.length-name.length),
@@ -34,9 +33,7 @@ var bundle = (function () {
       })
 
       output.on('close', function() {
-        if(del){
-          utils.deleteFolderRecursive(path + name)
-        }else{
+        if(ins){
           fs.renameSync(path + name + '.zip', path + name + '/' + name + '.zip')
         }
         callback()
