@@ -12,5 +12,10 @@
   },
   "author": "Sebastian Meier",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/svift/render-bundle-module#readme"
+  "homepage": "https://bitbucket.org/svift/render-bundle-module#readme",
+  "dependencies": {
+    "archiver": "^2.0.0",
+    "fs": "0.0.1-security",
+    "svift-utils": "git+ssh://git@bitbucket.org/svift/utils.git"
+  }
 }
