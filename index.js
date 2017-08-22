@@ -12,7 +12,7 @@ var fs = require('fs'),
 
 var bundle = (function () {
  
-  var module = {};
+  var module = {}
 
   /**
   * ZIP a folder, name it like the folder and move it into the folder after its done, then invoke the callback
@@ -23,7 +23,7 @@ var bundle = (function () {
   * @api public
   */
 
-  module.bundle = function (folder, delete, callback) {
+  module.bundle = function (folder, del, callback) {
     var split = folder.split('/'),
       name = split[split.length-1],
       path = folder.substr(0,folder.length-name.length),
@@ -34,7 +34,7 @@ var bundle = (function () {
       })
 
       output.on('close', function() {
-        if(delete){
+        if(del){
           utils.deleteFolderRecursive(path + name)
         }else{
           fs.renameSync(path + name + '.zip', path + name + '/' + name + '.zip')
