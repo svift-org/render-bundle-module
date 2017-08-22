@@ -55,8 +55,8 @@ var bundle = (function () {
       })
 
       archive.pipe(output)
-
-      archive.directory(folder, false);
+      archive.directory(folder, false)
+      archive.finalize()
   };
 
   return module;
