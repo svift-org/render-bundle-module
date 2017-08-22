@@ -49,12 +49,14 @@ var bundle = (function () {
             throw err
         }
       })
-       
+
       archive.on('error', function(err) {
         throw err
       })
 
       archive.pipe(output)
+
+      archive.directory(folder, false);
   };
 
   return module;
