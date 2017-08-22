@@ -23,7 +23,7 @@ var bundle = (function () {
   * @api public
   */
 
-  module.bundle = function (folder, callback, delete) {
+  module.bundle = function (folder, delete, callback) {
     var split = folder.split('/'),
       name = split[split.length-1],
       path = folder.substr(0,folder.length-name.length),
