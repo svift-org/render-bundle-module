@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/svift/render-bundle-module.git"
+    "url": "git+https://git@github.com/svift-org/render-bundle-module.git"
   },
   "author": "Sebastian Meier",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/svift/render-bundle-module#readme",
+  "homepage": "https://github.com/svift-org/render-bundle-module#readme",
   "dependencies": {
     "archiver": "^2.0.0",
     "fs": "0.0.1-security"
